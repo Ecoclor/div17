@@ -1,0 +1,89 @@
+
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: goldenrod;
+    flex-direction:column;
+    color: white;
+  }
+
+
+  .ContenedorGrid {
+    background-color: white;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+  }
+  
+  .grid-item {
+    border: 1px solid black;
+    text-align: center;
+    padding: 4rem;
+  }
+  figcaption{
+    font-size: 1rem;
+    color: wheat;
+    background-color: orange;
+  }
+  footer {
+    display: flex;
+    height: 20px;
+    background-color: orange;
+    align-items: center;
+    /* width: 100%;
+    color: white;
+    text-align: center; */
+  }
+
+  img{
+      width: 30vw;
+      height: 30vh;
+  }
+
+  video{
+    width: 30vw;
+    height: 30vh;      
+  }
+
+  
+h1{
+    animation: 2s ease-in 0s infinite normal forwards running aparece;
+}
+
+@keyframes aparece {
+
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+ @media only screen and (max-width: 500px) { 
+
+    .ContenedorGrid {
+        background-color: white;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr  ;
+      }
+
+
+}
+  /*
+@media (min-width: 900px) { 
+    body {
+        background-color: red;
+    } 
+    div:nth-child(3) {
+        display: none;
+}
+    div:nth-child(1) {
+        display: block;
+    }
+} */
